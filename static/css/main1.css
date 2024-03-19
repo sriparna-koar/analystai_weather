@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #01172d;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #518da9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.main-header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.background {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.desktop-background {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.desktop-background:hover {
+    transform: scale(1.05);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.search input[type="text"]:focus {
+    border: 2px solid #007bff;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #333;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.search input[type="text"]::placeholder {
+    color: #000000; /* Adjust the placeholder color */
+    opacity: 0.7; /* Adjust the opacity if needed */
+}
+
+.search input[type="text"]:focus::placeholder {
+    color: #000000; /* Change placeholder color on focus */
+    opacity: 1;
+}

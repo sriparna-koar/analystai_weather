@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-        <title> Error </title>
-    </head>
-    <body>
-        <main>
-            <div class="container">
-                <div class="background">
-                    <img src="/static/assets/404_error_background.jpg" alt="" id="error-background">
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main2.css')}}">
+    <title>Error</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="background">
+                <img src="/static/assets/error.jpeg" alt="" id="error-background">
+            </div>
+            <div class="error-content">
+                <h2 id="error-text">This city does not exist. Please try again.</h2>
                 <div class="change-button">
-                    <img class="chevron-icon" src="/static/assets/chevron-left.png" alt="">
-                    <a href="{{ url_for('home')}}"> CHANGE CITY </a>
-                </div>
-                <h2 id="error-text"> This city does not exist. Please try again. </h2>
-                <div class="footer">
-                    <a href="https://rachanahegde.squarespace.com/"> © Rachana Hegde </a>
+                    <img class="chevron-icon" src="/static/assets/back.jpeg" alt="">
+                    <a href="{{ url_for('home')}}">CHANGE CITY</a>
                 </div>
             </div>
-        </main>
-    </body>
+            <div class="footer">
+                <a href="https://portfolio-sriparna.vercel.app/">© Sriparna Koar</a>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
